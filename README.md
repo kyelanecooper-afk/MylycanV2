@@ -1,0 +1,53 @@
+# My Lycan V2 — signup screen
+
+The first isolated Expo / React Native screen for My Lycan V2. No dashboard,
+Shopify integration, live accounts, checkout or customer data is included.
+
+## What is built
+
+- White and light-blue glass, navy copy and an orange email action.
+- Apple, Google and email/password choices on one signup screen.
+- Email fields expand on the same screen; polite validation and show/hide password.
+- Brief button glow, press animation and light native haptic feedback.
+- Reduced-motion / reduced-transparency support, scrollable layout and keyboard avoidance.
+- A native Apple button when supported on iOS. Other provider controls are visual previews.
+
+The wordmark is a text placeholder for the approved My Lycan logo.
+Account creation, Apple/Google authentication, verification, password recovery,
+policy consent and account linking are **not connected**. Use demo information
+only. The screen clearly identifies itself as a design preview; it saves and sends
+no form data. The Sign in link explains that its separate page will follow.
+
+## Run on Windows
+
+Install Node.js LTS and extract this folder. Open PowerShell in the folder:
+
+```powershell
+npm.cmd install
+npm.cmd run typecheck
+npx.cmd expo login
+npm.cmd start
+```
+
+Sign into Expo CLI and Expo Go with the same Expo account. Put your laptop and
+iPhone on the same Wi-Fi, then scan the terminal QR code with your iPhone camera.
+No EAS project, store release or live backend has been created by this starter.
+
+Native Google authentication will need an Expo development build later.
+The package versions follow Expo SDK 57's official bundled module list. If Expo Go
+reports a version mismatch, match the project SDK to the installed Expo Go before
+changing app code.
+
+## GitHub
+
+Suggested private repository: `kyelanecooper-afk/My-Lycan-V2`.
+The new repository must first be created on GitHub and authorised for the connector.
+This folder is the proposed initial source; it is separate from the live V1 repo.
+Do not add credentials, signing files, node_modules or `.expo` to version control.
+
+## Validation
+
+TypeScript syntax and local form-validation boundaries can be checked without a
+device. Full type-checking, bundling and on-device layout/accessibility checks
+require installing the Expo dependencies and running on the laptop/iPhone.
+No live authentication has been tested or enabled.
