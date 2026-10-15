@@ -7,16 +7,16 @@ Shopify integration, live accounts, checkout or customer data is included.
 
 - White and light-blue glass, navy copy and an orange email action.
 - Apple, Google and email/password choices on one signup screen.
-- Email fields expand on the same screen; polite validation and show/hide password.
-- Brief button glow, press animation and light native haptic feedback.
+- Email signup uses a separate keyboard-aware screen with inline validation and show/hide password.
+- Buttons show default, pressed and disabled states, with brief animation and light haptic feedback.
+- Safe-area positioned settings control; reduced clutter around the header and footer.
 - Reduced-motion / reduced-transparency support, scrollable layout and keyboard avoidance.
-- A native Apple button when supported on iOS. Other provider controls are visual previews.
+- A native Apple button when supported on iOS; the Google G is bundled from Google's official sign-in asset.
 
 The wordmark is a text placeholder for the approved My Lycan logo.
 Account creation, Apple/Google authentication, verification, password recovery,
 policy consent and account linking are **not connected**. Use demo information
-only. The screen clearly identifies itself as a design preview; it saves and sends
-no form data. The Sign in link explains that its separate page will follow.
+only. It saves and sends no form data; a notice makes clear that this is a preview. The Sign in link explains that its separate page will follow.
 
 ## Run on Windows
 
@@ -26,14 +26,14 @@ Install Node.js LTS and extract this folder. Open PowerShell in the folder:
 npm.cmd install
 npm.cmd run typecheck
 npx.cmd expo login
-npm.cmd start
+npm.cmd start -- --tunnel
 ```
 
 Sign into Expo CLI and Expo Go with the same Expo account. Put your laptop and
 iPhone on the same Wi-Fi, then scan the terminal QR code with your iPhone camera.
 No EAS project, store release or live backend has been created by this starter.
 
-Native Google authentication will need an Expo development build later.
+The Expo tunnel helper is included in development dependencies. Native Google authentication will need an Expo development build later.
 The package versions follow Expo SDK 57's official bundled module list. If Expo Go
 reports a version mismatch, match the project SDK to the installed Expo Go before
 changing app code.
