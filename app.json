@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "My Lycan V2 Preview",
+    "slug": "my-lycan-v2",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mylycan.customer.v2",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "package": "com.mylycan.customer.v2"
+    },
+    "plugins": ["expo-apple-authentication"]
+  }
+}
