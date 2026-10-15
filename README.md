@@ -40,14 +40,14 @@ changing app code.
 
 ## GitHub
 
-Suggested private repository: `kyelanecooper-afk/My-Lycan-V2`.
-The new repository must first be created on GitHub and authorised for the connector.
-This folder is the proposed initial source; it is separate from the live V1 repo.
-Do not add credentials, signing files, node_modules or `.expo` to version control.
+This V2 project is stored separately at `kyelanecooper-afk/MylycanV2`; it does
+not use or modify the live V1 repository. The repository currently contains the
+initial signup-screen preview only. Do not add credentials, signing files,
+`node_modules` or `.expo` to version control.
 
 ## Validation
 
-TypeScript syntax and local form-validation boundaries can be checked without a
-device. Full type-checking, bundling and on-device layout/accessibility checks
-require installing the Expo dependencies and running on the laptop/iPhone.
+The project configuration files parse, and the initial source is committed.
+Full type-checking, bundling and on-device layout/accessibility checks require
+installing the Expo dependencies and running on the laptop/iPhone.
 No live authentication has been tested or enabled.
